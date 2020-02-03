@@ -26,7 +26,6 @@ export default {
   }),
   computed: {
     base() {
-      console.log(this.$store.getters.info.dill)
       return this.$store.getters.info.dill / (this.rates['RUB'] / this.rates['EUR'])
     }
   },
